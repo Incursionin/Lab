@@ -6,30 +6,26 @@
 #include <malloc.h>
 int main(void) {
     srand(time(NULL));
-    int i, temp, temp2, j, min=0,max ;
-    int* a;
-    int n;
-    printf("Enter massive length: ");
-    scanf("%d", &n);
-    a = (int*)malloc(n * sizeof(int));
-    for (i = 0; i < n; i++) {
-        a[i] = rand() % 100;
-        printf("%d\n", a[i]);
-    }
-    max = a[0];
-    min = a[0];
-    for (i = 0; i < n; i++) {
-        if (max < a[i]) {
-            max = a[i];
-        }
-        if (min > a[i]) {
-            min = a[i];
+    int i, j,sum=0,n,f;
+    int massive[5][5];
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < 5; j++) {
+            massive[i][j] = rand() % 100;
+            printf("\n[%d][%d]%d\n\t",i,j,massive[i][j]);
         }
     }
-    
-
-    printf(" \nmax = %d ", max);
-    printf("\nmin = %d", min);
-    printf("\nsub = %d\n", max - min);
+    i = 0;
+    for (j = 0; j < 5; ++j) {
+        sum += massive[i][j];
+        if (j == 4) {
+            j = -1;
+            i++;
+            printf("\n%d\n", sum);
+            sum = 0;
+        }
+        if (i == 5) {
+            break;
+        }
+    }
     system("pause");
 }
