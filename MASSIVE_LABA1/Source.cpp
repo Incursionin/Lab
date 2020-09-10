@@ -1,31 +1,24 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <time.h>
 #include <conio.h>
 #include <stdlib.h>
-#include <malloc.h>
-int main(void) {
-    srand(time(NULL));
-    int i, j,sum=0,n,f;
-    int massive[5][5];
-    for (i = 0; i < 5; i++) {
-        for (j = 0; j < 5; j++) {
-            massive[i][j] = rand() % 100;
-            printf("\n[%d][%d]%d\n\t",i,j,massive[i][j]);
+    struct student {
+        char surname[20], name[20], faculty[50];
+        int Number;
+    }stud[4];
+    int main(void) {
+        int i, n;
+        for (i = 0; i < 4; i++) {
+            printf("Enter student's surname,name,faculty,number\n");
+            scanf("%20s%20s%20s%20d", stud[i].surname,stud[i].name,stud[i].faculty,&stud[i].Number);
+        }
+        printf("Enter i: ");
+        scanf("%d", &n);
+        for (i = 0; i < 4; i++) {
+        if (stud[i].Number == n) {
+            printf("%s %s %s %d\n", &stud[i].surname, &stud[i].name, &stud[i].faculty, stud[i].Number);
         }
     }
-    i = 0;
-    for (j = 0; j < 5; ++j) {
-        sum += massive[i][j];
-        if (j == 4) {
-            j = -1;
-            i++;
-            printf("\n%d\n", sum);
-            sum = 0;
-        }
-        if (i == 5) {
-            break;
-        }
+        system("pause");
     }
-    system("pause");
-}
+
