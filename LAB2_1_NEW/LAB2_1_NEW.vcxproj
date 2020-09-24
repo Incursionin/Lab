@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{636D50BA-E5FB-40A3-82C5-41E836E68376}</ProjectGuid>
-    <RootNamespace>Laba2</RootNamespace>
+    <ProjectGuid>{C50E7F1F-583D-4148-9889-50990D33E716}</ProjectGuid>
+    <RootNamespace>LAB21NEW</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

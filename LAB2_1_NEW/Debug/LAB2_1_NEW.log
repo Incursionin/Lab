@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\Максим\source\repos\LAB2_1_NEW\LAB2_1_NEW\Source.cpp(30,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Максим\source\repos\LAB2_1_NEW\LAB2_1_NEW\Source.cpp(40,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  LAB2_1_NEW.vcxproj -> C:\Users\Максим\source\repos\LAB2_1_NEW\Debug\LAB2_1_NEW.exe
