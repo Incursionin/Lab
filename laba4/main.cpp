@@ -5,32 +5,6 @@
 #include <stack>
 #include <queue>
 using namespace std;
-void DFS(int vert, int* vis, int** mass, int f) {
-	printf("%d", vert + 1);
-	vis[vert] = 1;
-	for (int i = 0; i < f; i++) {
-		if (mass[vert][i] && vis[i] != 1) {
-			DFS(i, vis, mass, f);
-		}
-	}
-}
-void norecurses(int vertex, int** mass, int* vis, int f) {
-	stack<int>DFSstack;
-	DFSstack.push (vertex);
-	vis[vertex] = 1;
-	while (!DFSstack.empty()) {
-		vertex = DFSstack.top();
-		printf("%d", vertex + 1);
-		DFSstack.pop();
-		for (int i = f - 1; i >= 0; i--) {
-			if (mass[vertex][i] == 1 && vis[i]!= 1) {
-				vis[i] = 1;
-				DFSstack.push(i);
-			}
-		}
-	}
-
-}
 
 void BFS(int vertex, int** mass, int* vis, int f) {
 	queue<int>BFS;
@@ -38,13 +12,13 @@ void BFS(int vertex, int** mass, int* vis, int f) {
 	vis[vertex] = 1;
 	while (!BFS.empty()) {
 		vertex = BFS.front();
+		printf("%d", vertex + 1);
 		BFS.pop();
-	}
-	for (int i = 0; i < f; i++) {
-		if (mass[vertex][i] == 1 && vis[i] == 0) {
-			BFS.push(i);
-			vis[i] = 1;
-			printf("%d", i+1);
+		for (int i = 0; i < f; i++) {
+			if (mass[vertex][i] == 1 && vis[i] == 0) {
+				BFS.push(i);
+				vis[i] = 1;
+			}
 		}
 	}
 }
@@ -74,7 +48,7 @@ int main() {
 	for (int i = 0; i < f; i++) {
 		for (int j = 0; j < f; j++) {
 			int c = rand() % 101;
-			if (c <= 50) {
+			if (c <= 30) {
 				mass[i][j] = 1;
 			}
 			else mass[i][j] = 0;
@@ -98,17 +72,11 @@ int main() {
 		printf("\n");
 	}
 	
-	/*for (int vert = 0; vert < f; vert++) {
-		if (vis[vert] == 0) {
-			printf("\n");
-			DFS(vert, vis, mass, f);
-		}
-	}*/
-	printf("\n");
+
 	for (int vert = 0; vert < f; vert++) {
 		if (vis[vert] == 0) {
 			printf("\n");
-			norecurses(vert, mass, vis, f);
+			BFS(vert, mass, vis, f);
 		}
 	}
 
