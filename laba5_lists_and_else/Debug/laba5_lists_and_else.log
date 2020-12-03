@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\Максим\source\repos\laba5_lists_and_else\laba5_lists_and_else\Source.cpp(9,2): warning C4091: typedef : пропускается слева от "NODE", когда ни одна переменная не объявлена
+C:\Users\Максим\source\repos\laba5_lists_and_else\laba5_lists_and_else\Source.cpp(13,2): warning C4091: typedef : пропускается слева от "LIST", когда ни одна переменная не объявлена
+C:\Users\Максим\source\repos\laba5_lists_and_else\laba5_lists_and_else\Source.cpp(140,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  laba5_lists_and_else.vcxproj -> C:\Users\Максим\source\repos\laba5_lists_and_else\Debug\laba5_lists_and_else.exe
