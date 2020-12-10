@@ -1,3 +1,6 @@
 ﻿  Source.cpp
-C:\Users\Максим\source\repos\laba6\laba6\Source.cpp(26,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Максим\source\repos\laba6\laba6\Source.cpp(11,2): warning C4091: typedef : пропускается слева от "NODE", когда ни одна переменная не объявлена
+C:\Users\Максим\source\repos\laba6\laba6\Source.cpp(15,2): warning C4091: typedef : пропускается слева от "LIST", когда ни одна переменная не объявлена
+C:\Users\Максим\source\repos\laba6\laba6\Source.cpp(161,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Максим\source\repos\laba6\laba6\Source.cpp(162,13): warning C4101: start2: неиспользованная локальная переменная
   laba6.vcxproj -> C:\Users\Максим\source\repos\laba6\Debug\laba6.exe
