@@ -1,3 +1,5 @@
 ﻿  main.cpp
-C:\Users\Максим\source\repos\laba4\laba4\main.cpp(27,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Максим\source\repos\laba4\laba4\main.cpp(11,2): warning C4091: typedef : пропускается слева от "NODE", когда ни одна переменная не объявлена
+C:\Users\Максим\source\repos\laba4\laba4\main.cpp(15,2): warning C4091: typedef : пропускается слева от "LIST", когда ни одна переменная не объявлена
+C:\Users\Максим\source\repos\laba4\laba4\main.cpp(116,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   laba4.vcxproj -> C:\Users\Максим\source\repos\laba4\Debug\laba4.exe
