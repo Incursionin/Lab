@@ -1,0 +1,3 @@
+﻿  Source.cpp
+C:\Users\Максим\source\repos\laba7new\Source.cpp(138,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  laba7new.vcxproj -> C:\Users\Максим\source\repos\laba7new\Debug\laba7new.exe
